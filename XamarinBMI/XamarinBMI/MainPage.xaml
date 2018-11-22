@@ -4,11 +4,26 @@
              xmlns:local="clr-namespace:XamarinBMI"
              x:Class="XamarinBMI.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout Padding="100,150">
+        
+        <Entry Placeholder="身長[m]または[cm]　例：1.75 または 175.0"
+               x:Name="EntryHeight"/>
+
+        <Entry Placeholder="体重[kg]　整数のみ　例：58"
+               x:Name="EntryWeight"/>
+
+        <Button Text="BMI計算(このページ)"
+                HorizontalOptions="Center"
+                x:Name="ButtonBMI"/>
+
+        <Label Text="ここに結果が出ます"
+               HorizontalOptions="Center"
+               x:Name="LabelResult"/>
+
+        <Button Text="BMI計算(別ページ)"
+                HorizontalOptions="Center"
+                x:Name="ButtonBMI2"/>
+        
     </StackLayout>
 
 </ContentPage>
